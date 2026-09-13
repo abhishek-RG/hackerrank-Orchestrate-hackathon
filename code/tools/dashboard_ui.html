@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buy or Wait? — dashboard</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #161922; --panel2: #1d212c; --border: #2a2f3d;
+    --text: #e6e8ee; --muted: #8b93a7; --accent: #5b8def; --good: #3fbf7f;
+    --bad: #e5566d; --warn: #e8b339; --mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 12px 18px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+  header h1 { font-size: 15px; margin: 0; font-weight: 600; }
+  header .stat { color: var(--muted); font-size: 12.5px; }
+  #layout { display: grid; grid-template-columns: 380px 1fr; height: calc(100vh - 47px); }
+  #list-pane { border-right: 1px solid var(--border); display: flex; flex-direction: column; min-width: 0; }
+  #search { margin: 10px; padding: 8px 10px; background: var(--panel2); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--text); font-size: 13px; }
+  #filters { display: flex; gap: 6px; padding: 0 10px 8px; flex-wrap: wrap; }
+  #filters button { background: var(--panel2); border: 1px solid var(--border); color: var(--muted);
+    border-radius: 12px; padding: 3px 9px; font-size: 11.5px; cursor: pointer; }
+  #filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  #rows { overflow-y: auto; flex: 1; }
+  .row { padding: 9px 14px; border-bottom: 1px solid var(--border); cursor: pointer; }
+  .row:hover { background: var(--panel2); }
+  .row.selected { background: #1f2a44; }
+  .row .top { display: flex; justify-content: space-between; align-items: baseline; }
+  .row .rid { font-family: var(--mono); font-size: 12.5px; color: var(--text); }
+  .row .amt { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .row .mid { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .badge { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 10.5px;
+    font-weight: 600; text-transform: uppercase; letter-spacing: .02em; margin-right: 4px; }
+  .badge.affordable_now { background: #1d3a2c; color: var(--good); }
+  .badge.affordable_with_plan { background: #24304f; color: var(--accent); }
+  .badge.affordable_later { background: #3a3320; color: var(--warn); }
+  .badge.not_affordable { background: #3a1f27; color: var(--bad); }
+  .match { font-family: var(--mono); font-size: 11px; }
+  .match.full { color: var(--good); } .match.partial { color: var(--warn); } .match.none { color: var(--bad); }
+  #detail { padding: 20px 26px; overflow-y: auto; }
+  #detail .empty { color: var(--muted); margin-top: 60px; text-align: center; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 16px; }
+  .card h2 { font-size: 13px; margin: 0 0 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .kv { display: grid; grid-template-columns: 180px 1fr; gap: 6px 12px; font-size: 13px; }
+  .kv .k { color: var(--muted); }
+  .kv .v { font-family: var(--mono); }
+  .explanation { font-size: 13.5px; line-height: 1.55; background: var(--panel2); border-radius: 8px; padding: 12px 14px; }
+  table.tl { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.tl th { text-align: left; color: var(--muted); font-weight: 500; padding: 5px 8px; border-bottom: 1px solid var(--border); }
+  table.tl td { padding: 4px 8px; border-bottom: 1px solid #20242f; font-family: var(--mono); }
+  table.tl tr.neg td.amt { color: var(--bad); } table.tl tr.pos td.amt { color: var(--good); }
+  table.tl tr.recur td.label { color: var(--accent); }
+  .cand { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; font-size: 12.5px; }
+  .cand.winner { border-color: var(--good); background: #10251c; }
+  .cand .head { display: flex; justify-content: space-between; font-weight: 600; }
+  .cand .sched { font-family: var(--mono); color: var(--muted); margin-top: 4px; }
+  .chart { width: 100%; height: 160px; }
+  .diff-ok { color: var(--good); } .diff-bad { color: var(--bad); }
+  .whatif { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+  .whatif label { display: block; font-size: 11.5px; color: var(--muted); margin-bottom: 3px; }
+  .whatif input { width: 100%; padding: 6px 8px; background: var(--panel2); border: 1px solid var(--border);
+    color: var(--text); border-radius: 6px; font-family: var(--mono); font-size: 12.5px; }
+  .whatif .full { grid-column: 1 / -1; }
+  #recompute-btn { margin-top: 12px; background: var(--accent); color: #fff; border: none; border-radius: 6px;
+    padding: 8px 16px; font-size: 13px; cursor: pointer; font-weight: 600; }
+  #recompute-btn:hover { opacity: .9; }
+  #reset-btn { margin-top: 12px; margin-left: 8px; background: var(--panel2); color: var(--muted); border: 1px solid var(--border);
+    border-radius: 6px; padding: 8px 14px; font-size: 13px; cursor: pointer; }
+  .pill { font-size: 10.5px; padding: 1px 6px; border-radius: 8px; background: var(--panel2); color: var(--muted); }
+  .problems { color: var(--bad); font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Buy or Wait? — live dashboard</h1>
+  <span class="stat" id="header-stat">loading…</span>
+</header>
+<div id="layout">
+  <div id="list-pane">
+    <input id="search" placeholder="search request_id, user_id, type…">
+    <div id="filters">
+      <button data-f="all" class="active">all</button>
+      <button data-f="affordable_now">affordable_now</button>
+      <button data-f="affordable_with_plan">with_plan</button>
+      <button data-f="affordable_later">later</button>
+      <button data-f="not_affordable">not_affordable</button>
+      <button data-f="samples">samples only</button>
+      <button data-f="mismatches">sample mismatches</button>
+    </div>
+    <div id="rows"></div>
+  </div>
+  <div id="detail"><div class="empty">Select a request on the left.</div></div>
+</div>
+<script>
+let ALL = [];
+let CURRENT = null;   // full detail payload for the selected request
+let currentFilter = "all";
+let currentQuery = "";
+
+async function loadList() {
+  const res = await fetch(`/api/requests?q=${encodeURIComponent(currentQuery)}`);
+  const data = await res.json();
+  ALL = data.requests;
+  renderList();
+  const total = ALL.length;
+  const samples = ALL.filter(r => r.is_sample).length;
+  document.getElementById("header-stat").textContent =
+    `${total} requests loaded (${samples} solved samples, ${total - samples} eval)`;
+}
+
+function passesFilter(r) {
+  if (currentFilter === "all") return true;
+  if (currentFilter === "samples") return r.is_sample;
+  if (currentFilter === "mismatches") return r.is_sample && r.sample_match !== r.sample_total_fields;
+  return r.affordability_status === currentFilter;
+}
+
+function renderList() {
+  const box = document.getElementById("rows");
+  box.innerHTML = "";
+  for (const r of ALL) {
+    if (!passesFilter(r)) continue;
+    const div = document.createElement("div");
+    div.className = "row" + (CURRENT && CURRENT.request.request_id === r.request_id ? " selected" : "");
+    let matchHtml = "";
+    if (r.is_sample) {
+      const cls = r.sample_match === r.sample_total_fields ? "full" : (r.sample_match >= 3 ? "partial" : "none");
+      matchHtml = `<span class="match ${cls}">${r.sample_match}/${r.sample_total_fields}</span>`;
+    }
+    const probs = r.problems && r.problems.length ? ` <span class="pill" style="color:var(--bad)">⚠ ${r.problems.length}</span>` : "";
+    div.innerHTML = `
+      <div class="top">
+        <span class="rid">${r.request_id}${r.is_sample ? ' <span class="pill">sample</span>' : ''}</span>
+        <span class="amt">${matchHtml}</span>
+      </div>
+      <div class="mid">
+        <span class="badge ${r.affordability_status}">${r.affordability_status.replace(/_/g,' ')}</span>
+        ${r.recommended_payment_method} · ${r.currency} ${r.requested_amount} · safe ${r.amount_safe_to_pay}${probs}
+      </div>`;
+    div.onclick = () => selectRequest(r.request_id);
+    box.appendChild(div);
+  }
+}
+
+async function selectRequest(id) {
+  const res = await fetch(`/api/request/${id}`);
+  CURRENT = await res.json();
+  renderList();
+  renderDetail();
+}
+
+function fieldRow(label, got, truth) {
+  if (truth === null || truth === undefined) return `<div class="k">${label}</div><div class="v">${got}</div>`;
+  const ok = String(got) === String(truth);
+  return `<div class="k">${label}</div><div class="v ${ok?'diff-ok':'diff-bad'}">${got}${ok?'':` <span style="color:var(--muted)">(truth: ${truth})</span>`}</div>`;
+}
+
+function renderTimelineChart(timeline, opening, minimum) {
+  if (!timeline.length) return "";
+  let running = parseFloat(opening);
+  const points = [{d:"start", b:running}];
+  for (const f of timeline) { running += parseFloat(f.amount); points.push({d:f.date, b:running}); }
+  const vals = points.map(p=>p.b).concat([parseFloat(minimum)]);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const w = 900, h = 150, pad = 6;
+  const x = i => pad + i * (w-2*pad) / Math.max(1, points.length-1);
+  const y = v => h - pad - (v-min) * (h-2*pad) / Math.max(1, (max-min));
+  const path = points.map((p,i)=> `${i===0?'M':'L'} ${x(i).toFixed(1)} ${y(p.b).toFixed(1)}`).join(" ");
+  const minY = y(parseFloat(minimum));
+  return `<svg class="chart" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <line x1="0" y1="${minY}" x2="${w}" y2="${minY}" stroke="var(--bad)" stroke-dasharray="4 3" stroke-width="1"/>
+    <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2"/>
+  </svg>`;
+}
+
+function renderDetail() {
+  const box = document.getElementById("detail");
+  if (!CURRENT) { box.innerHTML = '<div class="empty">Select a request on the left.</div>'; return; }
+  const { request, profile, result, truth } = CURRENT;
+  const row = result.row;
+
+  const decisionKv = `<div class="kv">
+    ${fieldRow("amount_safe_to_pay", row.amount_safe_to_pay, truth && truth.amount_safe_to_pay)}
+    ${fieldRow("affordability_status", row.affordability_status, truth && truth.affordability_status)}
+    ${fieldRow("recommended_payment_method", row.recommended_payment_method, truth && truth.recommended_payment_method)}
+    ${fieldRow("payment_plan", row.payment_plan, truth && truth.payment_plan)}
+    ${fieldRow("earliest_date_for_full_payment", row.earliest_date_for_full_payment, truth && truth.earliest_date_for_full_payment)}
+    ${fieldRow("spending_changes_needed", row.spending_changes_needed, truth && truth.spending_changes_needed)}
+  </div>`;
+
+  const problems = result.problems.length
+    ? `<div class="problems">⚠ structural validation: ${result.problems.join("; ")}</div>` : "";
+
+  const timelineRows = result.timeline.map(f => {
+    const cls = (parseFloat(f.amount) < 0 ? "neg" : "pos") + (f.recurring ? " recur" : "");
+    return `<tr class="${cls}"><td>${f.date}</td><td class="label">${f.label}</td><td>${f.category}</td><td class="amt">${f.amount}</td></tr>`;
+  }).join("");
+
+  const candHtml = result.candidates.map(c => {
+    const isWinner = result.winner && JSON.stringify(c) === JSON.stringify(result.winner);
+    const sched = c.schedule.map(s => `${s.date}:${s.amount}`).join(" | ");
+    const changes = c.changes.length ? c.changes.map(ch => ch.op === "stop" ? `stop:${ch.event_id}` : `reduce:${ch.event_id}→${ch.new_amount}`).join(", ") : "none";
+    return `<div class="cand ${isWinner ? 'winner' : ''}">
+      <div class="head"><span>${c.method}${isWinner ? ' ✓ chosen' : ''}${c.payment_option_id ? ` <span class="pill">${c.payment_option_id}</span>` : ''}</span>
+        <span class="pill">total ${c.total_paid}</span></div>
+      <div class="sched">${sched}</div>
+      <div class="sched">changes: ${changes}</div>
+    </div>`;
+  }).join("") || '<div style="color:var(--muted)">No safe, rule-eligible candidate was found.</div>';
+
+  box.innerHTML = `
+    <div class="card">
+      <h2>${request.request_id} — ${request.request_type} — ${profile.home_currency}</h2>
+      <div class="kv">
+        ${fieldRow("user_id", request.user_id)}
+        ${fieldRow("requested_amount", request.requested_amount)}
+        ${fieldRow("request_date", request.request_date)}
+        ${fieldRow("desired_completion_date", request.desired_completion_date)}
+        ${fieldRow("allows_partial_payment", request.allows_partial_payment)}
+        ${fieldRow("current_available_balance", profile.current_available_balance)}
+        ${fieldRow("minimum_balance_to_keep", profile.minimum_balance_to_keep)}
+        ${fieldRow("payment_methods_accepted", profile.payment_methods.join("|"))}
+        ${fieldRow("max_installment_months", profile.max_installment_months ?? "—")}
+      </div>
+      <div style="color:var(--muted); font-size:12.5px; margin-top:10px; font-style:italic;">“${request.request_text}”</div>
+    </div>
+
+    <div class="card">
+      <h2>Decision${truth ? ' (vs. solved truth)' : ''}</h2>
+      ${decisionKv}
+      ${problems}
+      <div style="margin-top:12px" class="explanation">${row.decision_explanation}</div>
+    </div>
+
+    <div class="card">
+      <h2>90-day cash-flow forecast</h2>
+      ${renderTimelineChart(result.timeline, result.opening_balance, result.minimum_balance_to_keep)}
+      <div style="color:var(--muted); font-size:11px; margin:4px 0 10px">
+        opening ${result.opening_balance} · minimum balance (red line) ${result.minimum_balance_to_keep}
+      </div>
+      <table class="tl"><thead><tr><th>date</th><th>label</th><th>category</th><th>amount</th></tr></thead>
+        <tbody>${timelineRows}</tbody></table>
+    </div>
+
+    <div class="card">
+      <h2>Candidates considered</h2>
+      ${candHtml}
+    </div>
+
+    <div class="card">
+      <h2>What-if — recompute live</h2>
+      <div class="whatif">
+        <div><label>requested_amount</label><input id="wi-amount" value="${request.requested_amount}"></div>
+        <div><label>desired_completion_date</label><input id="wi-deadline" value="${request.desired_completion_date}"></div>
+        <div><label>request_date</label><input id="wi-reqdate" value="${request.request_date}"></div>
+        <div><label>allows_partial_payment</label>
+          <select id="wi-partial" style="width:100%;padding:6px 8px;background:var(--panel2);border:1px solid var(--border);color:var(--text);border-radius:6px;font-family:var(--mono);font-size:12.5px;">
+            <option value="true" ${request.allows_partial_payment?'selected':''}>true</option>
+            <option value="false" ${!request.allows_partial_payment?'selected':''}>false</option>
+          </select>
+        </div>
+        <div><label>current_available_balance</label><input id="wi-balance" value="${profile.current_available_balance}"></div>
+        <div><label>minimum_balance_to_keep</label><input id="wi-minbal" value="${profile.minimum_balance_to_keep}"></div>
+      </div>
+      <button id="recompute-btn">Recompute</button>
+      <button id="reset-btn">Reset</button>
+      <div id="whatif-result" style="margin-top:14px"></div>
+    </div>
+  `;
+
+  document.getElementById("recompute-btn").onclick = doRecompute;
+  document.getElementById("reset-btn").onclick = () => selectRequest(request.request_id);
+}
+
+async function doRecompute() {
+  const overrides = {
+    requested_amount: document.getElementById("wi-amount").value,
+    desired_completion_date: document.getElementById("wi-deadline").value,
+    request_date: document.getElementById("wi-reqdate").value,
+    allows_partial_payment: document.getElementById("wi-partial").value === "true",
+    current_available_balance: document.getElementById("wi-balance").value,
+    minimum_balance_to_keep: document.getElementById("wi-minbal").value,
+  };
+  const res = await fetch("/api/recompute", {
+    method: "POST", headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ request_id: CURRENT.request.request_id, overrides }),
+  });
+  const data = await res.json();
+  const row = data.result.row;
+  document.getElementById("whatif-result").innerHTML = `
+    <div class="kv">
+      ${fieldRow("amount_safe_to_pay", row.amount_safe_to_pay)}
+      ${fieldRow("affordability_status", row.affordability_status)}
+      ${fieldRow("recommended_payment_method", row.recommended_payment_method)}
+      ${fieldRow("payment_plan", row.payment_plan)}
+      ${fieldRow("earliest_date_for_full_payment", row.earliest_date_for_full_payment)}
+      ${fieldRow("spending_changes_needed", row.spending_changes_needed)}
+    </div>
+    <div style="margin-top:10px" class="explanation">${row.decision_explanation}</div>
+  `;
+}
+
+document.getElementById("search").addEventListener("input", (e) => {
+  currentQuery = e.target.value;
+  loadList();
+});
+document.querySelectorAll("#filters button").forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll("#filters button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentFilter = btn.dataset.f;
+    renderList();
+  };
+});
+
+loadList();
+</script>
+</body>
+</html>

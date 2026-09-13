@@ -1,0 +1,133 @@
+{
+  "_schema": "development cache; keys are SHA-256 content hashes, not dataset identifiers; values are low-level extraction signals only, never final decision fields; regenerate with code/tools/build_evidence_cache.py",
+  "entries": {
+    "0c0fe3d79e670f2b423bbb2aafc0b5601d3eb4e659ac64058cd189abf7792ee1": {
+      "_doc_note": "IndiGo air ticket invoice 07-Jun-2026",
+      "amount": "9968",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Grand Total (Incl Taxes)"
+    },
+    "1ae54b378a9556d94b753093ba80e7117caf86fab4d3fe11ec84e3dd2f6d6dd8": {
+      "_doc_note": "DailyObjects order, 2 items, delivery free",
+      "amount": "2298",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total paid"
+    },
+    "2665cf731a861ddb217be5b8082fbd390850a7a98feec018519b6fda0b30b4f8": {
+      "_doc_note": "EV charging session invoice incl. CGST/SGST",
+      "amount": "393.22",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total"
+    },
+    "281e7f1e7bd1f98fbd53cde1381977373e610e6634b11c98098000001ff10f0c": {
+      "_doc_note": "Grocery delivery order; 13 line items sum to exactly 2854.00; delivery fee shown waived",
+      "amount": "2854",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Item Bill"
+    },
+    "795e000d48428c97748e8af370cb02b604bec88cc52ec8930f38dc744624e886": {
+      "_doc_note": "Jeevan Hospital provisional bill: payable 3650, paid 0.00, balance 3650",
+      "amount": "3650",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Balance"
+    },
+    "9055551fbe5940feb01b947e1f18ccfed093192d103b1e930a56df0ea7cd3cb4": {
+      "_doc_note": "Blink Commerce tax invoice",
+      "amount": "1995",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total"
+    },
+    "9abcda5647afb3dcdf91613253ac0160bd722333af33a4b952dfc96fea6ff97b": {
+      "_doc_note": "Airtel bill: 704.05 due till 06-Feb-2026, 822.05 after. Event settles 2026-02-09, i.e. after the due date, so the higher figure applies (also the financially safer reading).",
+      "amount": "822.05",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Amount due after 06-Feb-2026"
+    },
+    "bf88e4aa35e6f36304cbf76bf6f505f32b04466bfd5f7df693fcb3ebe8a3e2c1": {
+      "_doc_note": "Handwritten pharmacy bill, 6 items",
+      "amount": "4543",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "TOTAL"
+    },
+    "c90f98caf0877083e471fd47dace772f83d4782037cf112e97c63f79a10ea8cf": {
+      "_doc_note": "22-line grocery tax invoice; subtotal 72,045 plus GST",
+      "amount": "79679.26",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total / Balance Due"
+    },
+    "ccd779e5382b1bcfacfb47d4ccf346ffd667a34c8b94d0cfd48aa4a609bd117d": {
+      "_doc_note": "Rent receipt: total 200,000, received 100,000, balance due 100,000; event is 'Outstanding rent balance'",
+      "amount": "100000",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Balance Due"
+    },
+    "e0e74e14425d923ff8a5c6db26ec6f4f26ee4697bfd257e414ba05c947a75ba8": {
+      "_doc_note": "Water bill receipt, invoice 6320",
+      "amount": "723",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total Amount Received"
+    },
+    "e10b0123e66d512d82f6c431fb741053b336627b89b9d9a138071ac6980a14ff": {
+      "_doc_note": "CityCab receipt; fare total 33.50 (cash paid 40.00, change 6.50). Document is USD while the user's home currency is INR, so this converts at the settlement-date rate.",
+      "amount": "33.50",
+      "confidence": 0.9,
+      "currency": "USD",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total"
+    },
+    "e28592ad8b4dacd03055e0b1ebc46670c83fbfa1162af07bdef33bb226bf63c8": {
+      "_doc_note": "Property maintenance receipt, invoice 6455",
+      "amount": "15339",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Total Amount Received"
+    },
+    "e5fb0bbcda6cc06f8ea95e32e45d4c76acd8c594f4b02ff0d78e6006e103ee4d": {
+      "_doc_note": "Riddhi Siddhi bill of supply 27/02/2026",
+      "amount": "41272",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Net Amount"
+    },
+    "f37b40e6af42c664846057252cac89ad41b7d029dfe8dacff2db8cceb79fa5ba": {
+      "_doc_note": "Aug-2019 payslip; gross earnings 4,780,800 less deductions 415,800",
+      "amount": "4365000",
+      "confidence": 0.9,
+      "currency": "IDR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Net Pay"
+    },
+    "f6d30a74355224c0b5cda2d7f96399a7b1a0afe4f9fe59ea048bbecb1a21311e": {
+      "_doc_note": "Nagarjuna restaurant tax invoice; line total 8528.10 rounded to 8528 payable",
+      "amount": "8528",
+      "confidence": 0.9,
+      "currency": "INR",
+      "extractor": "claude-opus-5:vision-interactive-2026-09-12",
+      "label": "Grand Total (RS)"
+    }
+  }
+}

@@ -1,0 +1,2666 @@
+{
+  "_schema": "development cache; keys are SHA-256 content hashes, not dataset identifiers; values are low-level extraction signals only, never final decision fields; regenerate with code/tools/build_evidence_cache.py",
+  "entries": {
+    "0277a3f9966da3d0b8e19eacc9e57fb568d25211e6dde65ced0cb1d25f0c94ac": {
+      "amounts": [
+        [
+          "EUR",
+          "2123"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-05-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "02e1a2beaa502adc27652a8c11ed77af6cad9c248005a9bb34a960597849f31c": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "windfall_settled",
+      "percent": null
+    },
+    "05629f3fc7640cdc853e6237b5017a24e4512b2e0dcbc5596588bb07c330aa74": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "06b2d1faa97ab7f662cf6d2503484368b4008d42212ee744f1a0e01e4bb60112": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "06f23bb16ce0fce9565e58a9ba80472d79c7fabf8ef061abf29ea893684a7d0d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "079ad57e66da66d7b77fa6310c20d28b427aafbe6d7536e3a4e4d7fe3aaec290": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "recurring_cost_change",
+      "percent": "12"
+    },
+    "08958837d8f035305b7fe666c3c7c822c5d0e3f9125055ded38c1f50b883be4e": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "08bba79121bd93fabe07e1e4b5739a4347181af4851f19a219295423d02dea82": {
+      "amounts": [
+        [
+          "IDR",
+          "21090000"
+        ],
+        [
+          "IDR",
+          "9490500"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "0a07db994d82067179913c0e15c85e134eda22d595bd1b50738b757c51972b49": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "0c9ee3dc1c45e7aa459900e788eee7c65bf2ec4a69e4922e2155c2e398fac109": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "0ec7ea27daaa6afc3d1d6df1a2656a3315650431dc39325aeeba29870d5a8d22": {
+      "amounts": [
+        [
+          "EUR",
+          "924"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "0f8dbe113b7bd41681cbad6ce477edcddc9b93b82b3ff714ccce48c2ee47f64a": {
+      "amounts": [
+        [
+          "EUR",
+          "1037.52"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.041888+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "1066b28eb80772b6b60ee1719289c89dedd326461349f21d08fd5585c8e3c33c": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "116784198f76de082a6e4e8a17e822f76d078a341caa8cb9b188f0c39f5813ac": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "debit_will_retry",
+      "percent": null
+    },
+    "1242b9c34b628b4c13e69f206dba4579a440680821614c0b620f3d55e44eb465": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "12821869593802e63ddfb000c657e402378ba9074fbd7ef81724ef9d2ae0ee20": {
+      "amounts": [
+        [
+          "IDR",
+          "25840000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "128270c7d9b87d957c3bc04ff24b66dacb7540a3b75bcfd86414f75dfda30e26": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "128d3142a96a2335ea16da167bdb287851ea5ff68ff44849cc867eb98be41030": {
+      "amounts": [
+        [
+          "USD",
+          "1752"
+        ],
+        [
+          "USD",
+          "788.40"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "1439ddfd48d98c974b5628ea11f13a3ee9c1fcbcfabe65224e1139b641e18918": {
+      "amounts": [
+        [
+          "USD",
+          "530.40"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "158b01c828ce2a63d4a97e23b45982f3dce2933bda2a72e5669be450f06f970b": {
+      "amounts": [
+        [
+          "INR",
+          "145000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-09-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "1641f0ab59bb4ef834edeece338e5665cbf757bde148b44a279adc13f3a2e209": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "168fb17cae2bbb3f1c6f6f630042f070b0a38e5d844b5d9bf1c68c7244b2b924": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "18363691faccd0c7cb8937390ac1698a158950fa7fd3aa71fa110d5302f3aaa7": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "195e5bade6bbfa0d1a50ea2f0f5118710f29aac2e34a7af8bc26f10d8fb19221": {
+      "amounts": [
+        [
+          "ZAR",
+          "38280"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "1985648b9afa1cfaf830844a8381e1b0e337dc9337cac67a9f855d9cf812ccf0": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "19bab6ff3d0a1f85faffbf00af38496170906c7e67a29d454ecf760b4b4559ad": {
+      "amounts": [
+        [
+          "EUR",
+          "1222.65"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "1ac91dd1685686c6b0b728dea3ee5621748eb4779b0b1071765dece7553fe88f": {
+      "amounts": [
+        [
+          "ZAR",
+          "35860"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "1e29224a06873f50928f82c78cd83e33f56955077c081e65377a31435a3885ea": {
+      "amounts": [
+        [
+          "IDR",
+          "30400000"
+        ],
+        [
+          "IDR",
+          "13680000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "2027dd62e19d9c3b6dbe4457fdc1fdbbea43e8dfc07aa4d1dedfb1955c772eab": {
+      "amounts": [
+        [
+          "INR",
+          "59000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "2120ad22c6321cad06197043242497124b36214760f6299615399728eef682b3": {
+      "amounts": [
+        [
+          "USD",
+          "2112"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "212365b52d5936d7d00482b997e79fae0fbb6a9443f65248ebbe546079295a35": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "23e3e07ae9f08cbfbbc518e11047e9674ffd89fc509e7288f40129a67f2171de": {
+      "amounts": [
+        [
+          "ZAR",
+          "50160"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-09-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "243067115df238c5e2a8cc9f78e97fa68efcea1820d96f9a940ba11fc589edaa": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "recurring_cost_change",
+      "percent": "12"
+    },
+    "246c38ce6f17879af38580b1330486f798278d5bc0eeee9d6cd929dd3db12d3c": {
+      "amounts": [
+        [
+          "INR",
+          "196000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "24997e7689a037501ad8c0a398ca3cb1de6ab0205ccfbdbbe04defeb391419cc": {
+      "amounts": [
+        [
+          "IDR",
+          "15390000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "259d8e018d74c95c4c92bdfeb308bfcddc8631007bdee434b1a1a2a7dcc83dce": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "263406e2afeb710a1b2d1d015f8888e4286b9cc846275e22268baf107850d555": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "investment_paper_move",
+      "percent": null
+    },
+    "26898fe57e87f0a8922c32a9027f73995fa0267e407f7c90d840cf27221811fb": {
+      "amounts": [
+        [
+          "INR",
+          "158000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "26dc446243342f006e2b59752a3008635f4bddd616709b34cbec1f2b2ff4cb59": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "debit_will_retry",
+      "percent": null
+    },
+    "2770a85b09c2f3b1c23ca0428e0c2c8cc3d8d6e9fe33768df2351a95375bf24b": {
+      "amounts": [
+        [
+          "EUR",
+          "2376"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "27c0eb3c4e33956e9a047e1a68780d0f5bbe9aff44a235bb4f45f9022d0eec2a": {
+      "amounts": [
+        [
+          "EUR",
+          "1804"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "2a817524a46dd45258e98f0f15812609b53174ed032abd955daca7ea905ea41e": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "2a8f6fc2aadd6d9cbe0ea9a959b0efcbde45165096e67e0d89820f3582c25d1e": {
+      "amounts": [
+        [
+          "EUR",
+          "847"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "2b0bead9965ecea1313f0725fb67c01484e6187006b6bfccaa6e0a4178a7e2f1": {
+      "amounts": [
+        [
+          "EUR",
+          "2024"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-01-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "2d4b0a4989e24563355e694976ef60488efd27b5888b24f989a4dbd2cb6dd8d2": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "2e32a1ec384b8fe10fad81f5c5ce2e037ba43456a875abffd822c530fb795dec": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-08-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "2edef99bfd54b591f7d2d51e6ac6ed2b991d1785f6d351e4f1150c5ad1cbb421": {
+      "amounts": [
+        [
+          "EUR",
+          "1452"
+        ],
+        [
+          "EUR",
+          "653.40"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "2efcb77e3c78c3e90943f95f3dd100a845a18e3b8cc18094f54597ef2cdc2d40": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "2f2d01ce0f7b7784957c7a537c371351123cb8ef16ed7fd22be1e530b55d59a9": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "301afa4cf2ba87c4bc78dcd7806d98d8926e2a8a579d433a602e139f11e37947": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "304e44631929fafc92f60f2cfc254062ddaa95320e89ee829c3433f3e60b8a88": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.077662+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "30f4ac0bc721fb46f221281fa70b94f07919963508e3d7e42c88fba0c6dd1d55": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "31fe379bdb48eef5e4eba9d337736d5a26132d68e87a419907241d7041e76ab6": {
+      "amounts": [
+        [
+          "EUR",
+          "759"
+        ],
+        [
+          "EUR",
+          "341.55"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "3225041dfe1094cb22b6f1955a7ed613a5deae82441dd9f3350226af6acf87dd": {
+      "amounts": [
+        [
+          "EUR",
+          "627"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "32c227a82a37b6c3d691785a433a2f595cf45f7a8be4b0c6ad99fd6e0095a759": {
+      "amounts": [
+        [
+          "INR",
+          "148200"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "35c7923df929bd7e06783153984ba26dced53458cc6c28c44f6a0d93fd81ca1c": {
+      "amounts": [
+        [
+          "INR",
+          "148000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "3683bda0b52426714fa51d54730c6a51d51661aa6ff39481124481bbd9894218": {
+      "amounts": [
+        [
+          "USD",
+          "864"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "3777dba6128975517a7f0bf53b2e66b5ceab558f68498a76e54df84af715c016": {
+      "amounts": [
+        [
+          "ZAR",
+          "31900"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-02-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "38303f56cc284cf7f9322d4e87eb1baf279ed4a10181f337a77db92b5cc46168": {
+      "amounts": [
+        [
+          "USD",
+          "2424"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "38ce270d159bfd294ca1f28c225d4337d84f772082e42bd4eab2c2fa24157aad": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "recurring_cost_change",
+      "percent": "12"
+    },
+    "39c2a9f52b92a9e264d31d0ba220c0835c3a44f7455d292bc464b7086be5170a": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "39d0ba7b13ab2261f2f63cb7cac76c3e6dcf58fa29410975caed3cbd703cc86d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "3ab060464f734577c7ed7357e12ce77e3ff2ac096a4eebb1443b763ed874db30": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "3b7f809fa4e5876a0786cc0c466b2a1c7e47bb4239a67edbf8dd54a544aca34e": {
+      "amounts": [
+        [
+          "EUR",
+          "748"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "3e722937fe6faf49f115aa681627f0d22134ef611c86096dc3c01f746ca5bedb": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "3f67da42232134501aefe0b51478de097771a1daf25d933df5aca8afdc08f6b2": {
+      "amounts": [
+        [
+          "ZAR",
+          "54120"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-02-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "402560577607d667f25976af9590958cc5f1c1873af28ab4ed82c6434233a395": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "416460b16dbc6d03732b78c1a7178e4ef649075e894258e588a3f77f37e23a25": {
+      "amounts": [
+        [
+          "ZAR",
+          "33440"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "422af9d5e894d51b5e154c4aa04a13e46d0d00f0df6dd20f679b1e21ef576cf2": {
+      "amounts": [
+        [
+          "IDR",
+          "8618400"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "428efc449ac60716770a3244631fc248777fadd973da4cda3d96136272388062": {
+      "amounts": [
+        [
+          "IDR",
+          "29070000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "43ce119116068a02c77e037a43c37a2e3d7c8fb118cfea99cc9d9cdfd1a8ccec": {
+      "amounts": [
+        [
+          "EUR",
+          "893.75"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "43d3d7ed74e2981d2347e3365368ff9c22ba56289984f370a5f37079c4fe99f3": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "recurring_cost_change",
+      "percent": "12"
+    },
+    "4545a23881d6227795e645c9bedfb0802c923430e5a66a1df97d39c22b6b5549": {
+      "amounts": [
+        [
+          "EUR",
+          "1485"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "48f6ab1cc9c77cffeb4784205f5207239a7323c45138f250ebcc00fc380e044b": {
+      "amounts": [
+        [
+          "ZAR",
+          "42460"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "4b276be553c6784d3b3886732e69f90af928e0cadfee759b94f13b0dc04d40d2": {
+      "amounts": [
+        [
+          "IDR",
+          "30780000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "4b5d1aa029b6053ca85ee8461d582d22ea235b6ce7d25f0dfea1d65d12d33778": {
+      "amounts": [
+        [
+          "USD",
+          "2340"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "505685f6aa072b39dec891441f7140249388e596c18cda3b31fb138933492081": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.75,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "50a0edecd1855487289aa19fb82b053207c332148a381fcb23ecab48f56f99ee": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "515a30a05aa3d8f97929ca973480abd81b70a90e345ccb7ebb2a371396645f4d": {
+      "amounts": [
+        [
+          "IDR",
+          "38190000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "5276ed73a8bd66f9aa3772219957bbc553f71f10ef7f03615a5adffb6a1dfe5d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "52802d43961ab7f3ec8c3f13470ceebb4182849ffe0af0f59dddf4e846266725": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-02-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "543b0e69741d9f4c70b4a7a099b2cdcd8b4df07da13bedd9566ceaa41ce3c2e0": {
+      "amounts": [
+        [
+          "IDR",
+          "17290000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "54c1663ff7ce803a3d5fb5e9947d8e50373ac62948ab2fd7237314cfa39a4543": {
+      "amounts": [
+        [
+          "USD",
+          "1548"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "56eb14daf2efa045f406741b9571cf337948a9c3e55adcf49b1c07f174a426ab": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "5817b4fc827f51b217195d851abab372b6e8279c646d6af3cc81ffc7a94d630a": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "5aff721f60bf5e41c20c1355f4ecb15e41173cbb89683c39b07d3c5e0d5d589f": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "5b1bcce16d84d70f71b8f26c027d95d9fc23274506187e5709d8b60b4d0ee27f": {
+      "amounts": [
+        [
+          "IDR",
+          "32870000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-09-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "5cb65f284eb36d387437b03513f4655b9430994c3f5d4e1e0555a869e064d447": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "5dd093a318ea39514424b35f5dfaef18de3f393bdb3473bf92e492d8eb8c3e04": {
+      "amounts": [
+        [
+          "USD",
+          "828"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "5ec7ae619c17972901e06fe68616c17a4211f02c659d91145b0eb3d9d48f4a2d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "603721cfb62184684441e1de4e4394eb253aa1156aecad8d95611690fdc0023d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "605f24153689547f8da2b53a564d31e9b029e70802489b2a3001c3b26dcfd790": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "62b2bc24daa8b2d071758259312eac13f1f239825bbbea19f8ae7c0317206a72": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.041888+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "63636e8b56723d6aa57609283d8b14f225b4b7dc88e007c9c6a61746ee88462d": {
+      "amounts": [
+        [
+          "USD",
+          "2040"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "636898230d80dbbe0464e55ce8d16db662d09f2132de42b00c010fb31aefe7fe": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "639a2d5131559b8f489eae875cf90b7dcd7b1e32705168aa7e3a8e3fe83cf8c8": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "63d9a4909aad6f52b1aebcc548f799dae44ca779efd0e8abaa2caf55a4793d4c": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "6576b0570e9750c0e588b2e7a3b247485afc65c3622440624f4ddbe56ff362ee": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "windfall_settled",
+      "percent": null
+    },
+    "660d8ad95fc255c64566a802d5762e6a73af6bd981e26cd738162f0cf3de6ffe": {
+      "amounts": [
+        [
+          "EUR",
+          "968"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "671282cd6546ae037580df5093d279fbac4976024fc236c5869b6a24e6ba6461": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-02-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "686aca9d9caa31553a2df83be44f9588cd3d912dbeb302cc80b8e6d3108a9850": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "68746272ff61345ea9bdcbbfea31e5fdbdb3297db55649b7193ea2cf918c64c5": {
+      "amounts": [
+        [
+          "ZAR",
+          "13420"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.053988+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "6d8064ed36fa1ba75c14d2dcfe7208a2321b384272fc5c2b906f2a664fab2547": {
+      "amounts": [
+        [
+          "EUR",
+          "1346.40"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "6efa695cc44fca2722697a4e0b50ec90d680e6b981d8bb1beeacc8031653b740": {
+      "amounts": [
+        [
+          "EUR",
+          "1672"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-06-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "6f91d9309acb9eae27dcdce9638b088b34e381ff7ad056bba542d30708e7f614": {
+      "amounts": [
+        [
+          "INR",
+          "251000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-01-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "6fe4913bd5afe19d70ce56ecc16dcea27797bf27c241a8ea640ee039cb7a2402": {
+      "amounts": [
+        [
+          "USD",
+          "1284"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "72b7e41e55b4b6c256c024797ae03dd10d072faaebf3cc438f863f20ee195a24": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "730ca58cb97e4614ebf31065e9ba4280dba876e746a23bcc98ab74abafaaa701": {
+      "amounts": [
+        [
+          "EUR",
+          "627"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-06-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "73a72bd145fbe67c1a231438e692f7c57ac6f0d1db9e3180b28296e5c4aaf1b0": {
+      "amounts": [
+        [
+          "INR",
+          "62000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "7514045790fda50df837d19fe192ea0c06d3579095ae76805b5e0ada11b110fd": {
+      "amounts": [
+        [
+          "EUR",
+          "1628"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "75a6b9adf11d711bea333c1b114a38aff2d441809ffbbeebe4cb8b26a83774b5": {
+      "amounts": [
+        [
+          "IDR",
+          "16910000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "78af2ae7eef9d9de629fda1b7ea2da9d0e8e45168b503dcc4c4f5ae27124b1f3": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "79691bef3bfeec1b7bf26984f4b8b88f15dfcdd88ecd720737ea4ca2a7bc0750": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.041888+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-09-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "79be053036fb2d29c4a1a893942082f6c7e9b2e1dd72c8743922ea2edb6f00dd": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "investment_paper_move",
+      "percent": null
+    },
+    "7a264d85a4acf413d5aed103f58e187c240a7637c8e029273709d2bb07ffc642": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": "12"
+    },
+    "7b45bdb5d5690c8e5b1b5bf28e0999ed9ab84bc1e029143ab0743ace2ce0a715": {
+      "amounts": [
+        [
+          "USD",
+          "1193.40"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "7ba0ee1564c71d0cbaf5dd0914f466e25961c07a4a580bc54da0122d28d4d982": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "fx_pending",
+      "percent": null
+    },
+    "7beda247801ff1aef9ad5f6677c1206726d17ab668aa7782fc64f9614e240e0f": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "8013da00af4716a981542faeb65a9b077f0646fb375b06a49cb5408b3d9f2f0f": {
+      "amounts": [
+        [
+          "USD",
+          "2988"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "83057bd4635a5c8c7a47856d5d492c16c8f56ccd5b1cb57be2963725bf066cc3": {
+      "amounts": [
+        [
+          "ZAR",
+          "18700"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "842db48076787220900fe603a262950a47f741e6651f9667dd7149fdff2616ce": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "842f9155a4c587f70e36fc7088a8ddb7cc219aa0ad09df92f6d3f18a18f5db07": {
+      "amounts": [
+        [
+          "IDR",
+          "42750000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.041888+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "8530eeb7701e2c82542403766c64e7f8829538cae1438de6403bee9e6f0a9ad1": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "857d3c7ccacc4febfd533cfa9e2bca32f2f7257f0ea904c4995c72bd707bf057": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "85805c09635039cfb30ae36e80652fd605a26903a4b0bd845342477210990737": {
+      "amounts": [
+        [
+          "EUR",
+          "1422.85"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "8884c7ee403a757e0a0b8adef7d3966e3de2a0f82de249cdd87b9e358d19c2df": {
+      "amounts": [
+        [
+          "IDR",
+          "38760000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "8fd7f540e2175e4e1038861cd85af6e9fc48015676afc933e272d0aac0c82b6d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "9290ee1da0caaba292dd888235837a26f296dcfebc102af5a0ed34161c79f279": {
+      "amounts": [
+        [
+          "INR",
+          "164880"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "92e37ed553405fb6b8680363c65ac1f0f7b35137e503d2bc511754136a1b530c": {
+      "amounts": [
+        [
+          "USD",
+          "696"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-05-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "9769ec2f7a3fc1df1510b5cd472e5155dd2cae416ce01c46b5905b2ddca8f88b": {
+      "amounts": [
+        [
+          "ZAR",
+          "53680"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "9a86e606704aa7aba2785a5f67b9766af0458845f917f083be66bd7be6b16336": {
+      "amounts": [
+        [
+          "USD",
+          "1731.60"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "9bc15b0a4caa5fbbbdfcb4fb3147eb5819d26f88230f85d13093d4ee93219b29": {
+      "amounts": [
+        [
+          "INR",
+          "103000"
+        ],
+        [
+          "INR",
+          "46350"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.077662+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "9bef5c1378cb8bd6a16f96fe810397626902a48d702b34510b7e96801bf718ea": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "9bf76963d444200fc6ae24d9afb4a5d19a057eb72c90ed46b5d3a23fafb0a148": {
+      "amounts": [
+        [
+          "INR",
+          "115000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-02-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "9d076bfa2b9dbf37b8a28e2df08f6461028a6a7a59abcada26303633d5b5c033": {
+      "amounts": [
+        [
+          "EUR",
+          "1419"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.054644+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2026-04-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "9fb8918b2d42258abf35e7779509f0303f59753287202878ae825295d1e717b4": {
+      "amounts": [
+        [
+          "EUR",
+          "1914"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-04-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "9fdf46a1859700fa05e43527f23f451eb3eef9e16ae2f4719a4f2f757aedfb6c": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "a1d5a387812c69450212957782246d66e2ff9efb951afbbe59715643213b6d5d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.053988+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "debit_will_retry",
+      "percent": null
+    },
+    "a2b2959518c9cd57a0982d6434ab693afa71a04c654c0c1a65cadca9044ab4f7": {
+      "amounts": [
+        [
+          "INR",
+          "176000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "a407dd3faf65670ee5d2fb1aca7cab9b59f94520f4f1e555645fdd3c69d6e6d2": {
+      "amounts": [
+        [
+          "EUR",
+          "1760"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-06-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "a75e260b2994d22ce5a2c5b4f2477b781cf067ea6495bca4f401407373aa8335": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "a7d567a8ef1408876b6adba1bf817d95e988eb6524f4ccb336651b2fc14857f2": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "a803bbb93313e4bccfa0818c4d5cbce4b67fca9c1fd93f98a55f8250beeb5786": {
+      "amounts": [
+        [
+          "INR",
+          "152000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "a8e346af7e9278e2af70babd238f4393fc9ef32768edd8ebe98aebc849d43b0a": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "document_is_final",
+      "percent": null
+    },
+    "ac4c23bb0266b9a161b9b50d3211070ef19eb1677dc28475941a9fcfddbf37c2": {
+      "amounts": [
+        [
+          "ZAR",
+          "35200"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2026-01-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "adc20d9cf17934d828974fa676b0f80ebe5e45e735e52883eef9361656eb9738": {
+      "amounts": [
+        [
+          "EUR",
+          "1528.56"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "ae60407babb670cebd51e69f22fa64d02effefb7f4c83fcad7a08e977f33e5bf": {
+      "amounts": [
+        [
+          "EUR",
+          "1924.56"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "af78840d3b635894e47eda9432fbc5f81b174d92cdc4d7e5988f5be445c9e6ad": {
+      "amounts": [
+        [
+          "INR",
+          "137150"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "b0ab870c770adb249ae9f62d65253a6c5ee2315d8b7969a63fbe7833a3276cb4": {
+      "amounts": [
+        [
+          "IDR",
+          "44270000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "b1bb717688a317c1152d8817c62e120ad92d3be8854b6076461fe1a4f33627e1": {
+      "amounts": [
+        [
+          "ZAR",
+          "16720"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "b382544111885bc2ef6d0906efdb5241c171f1af9822e93323cd46556a115dd2": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "b454d7b7c0ac8b1f348a23c424385295d70c1ee67f921218c15d11870082e886": {
+      "amounts": [
+        [
+          "INR",
+          "84000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "b5f45bd98c4498262d6f810f0bbc711ec765a5522ceb32b4cd730afa063e5184": {
+      "amounts": [
+        [
+          "ZAR",
+          "31889"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "b71bf88e275c6daeaa24657825cb28fee6f85e40641a7292c7548ef2de699cb6": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "bacd57a810339c12783c4f9ef68c348e155f90a2ca9b5b3173d1ae6985e13f42": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "bb88f1bca04aead033668d1fb7574804128d3c1c6d157a3cda1be6995d7b1624": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "recurring_cost_change",
+      "percent": "12"
+    },
+    "bbc610be3b8e444b86b2231885b04612f9eaed8fd5b1542af7bbd738c41e3536": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "bc27735559962210d8cf1488f10921726f5bc379c02ef9a2e19ca9b875414350": {
+      "amounts": [
+        [
+          "IDR",
+          "31464000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "bc8cabd654cc2f07d8c60054c28e6b88ebca3389ebeb26393dff5dd6825c301e": {
+      "amounts": [
+        [
+          "USD",
+          "3072"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "bd6335b4f06172215316988348b95ca9ac75f6d88d699088c8576143f6c238c2": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "debit_will_retry",
+      "percent": null
+    },
+    "bd8d574bfdbbca70363e5bbaf2838e358ffea5e3eff69949b930304851a4663e": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "bfc651be9def0b8aeeb762a30add038c7b1c76cf5d730abeee18b39ef8f5b513": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "bfe956db1f234ec3d5fd943ac76b661f69728e9adb9e3619aa71e857132a1fdf": {
+      "amounts": [
+        [
+          "ZAR",
+          "26180"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.052197+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "c02cb9075de01ab745ca1f3eac341c03690ab382e91bec22955d5f9d916669e5": {
+      "amounts": [
+        [
+          "EUR",
+          "2772"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-06-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "c10e4ece1ac5bedb235a2b60c44a7d700069e60d9312fa883214a460ac6dfdf4": {
+      "amounts": [
+        [
+          "INR",
+          "126000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "c28bd470757e6379f70c7499467b3d7f7db0a68e23477fd296449ecb0656a251": {
+      "amounts": [
+        [
+          "USD",
+          "2177.28"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "c3f16616282f88eb93a85440ff3d8ab45973c4972a5b42d9e8954c5ae2370d0e": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "c7302f77814ef27adca88c2e12018de7cd57f659d8d90246cd5ccbe51d8b7f1e": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "ca4ee4f3897e551bf2fdb3135e1b83ac74652cb3e543dbd4b3d7d60c0994a0b7": {
+      "amounts": [
+        [
+          "EUR",
+          "1815"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-12-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "cbe5667888890c5b01cee375793cc971253e356f95f9f9329c6e6aa13069401d": {
+      "amounts": [
+        [
+          "INR",
+          "62000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-01-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "cdb8887589565334a8283ab6962dec646d42ddd0c9b684a47d27121349893f6a": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "cff6f38f055ae3061e43e1eb25524a165aab22b8574703a7e16229c3479ea705": {
+      "amounts": [
+        [
+          "ZAR",
+          "49280"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.053988+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "cffa02157640088d60e4ba3a0fa98bfaa311fecaa0d0f9f26d05f62de379b90f": {
+      "amounts": [
+        [
+          "EUR",
+          "1529"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-04-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "d406d9cd7df129b6fcffcd79ea5ec17067cc598ac1059d9caf9680711b5dc92a": {
+      "amounts": [
+        [
+          "EUR",
+          "2717"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-08-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "d4afefcb1f7c89a51a4019ebe962fad76df6b6cc11b10d87c5e23fad3f26bed7": {
+      "amounts": [
+        [
+          "IDR",
+          "46170000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-09-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "d4d8e0cb20c7b81c923a2f6d749c603069ea9b1f03151cf42e3c063ddffe2976": {
+      "amounts": [
+        [
+          "INR",
+          "116000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2026-04-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "d6ec398ffecfcead23fc36ff50516c8c3ea13add0160815dc3f7ee686404c6aa": {
+      "amounts": [
+        [
+          "EUR",
+          "1750.32"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "d8b6a8b28382be387dfb489cee43cc51c22b9c258584e762ed44b7f5f9360379": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "d99c6fc76a7011c37b09e9995db7217f0ba622a4a021e82254c630dfb386e10c": {
+      "amounts": [
+        [
+          "IDR",
+          "26790000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.5,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "da7ea91ae31fca060a0c97ca583a2a92f3a07bd3f42431a7615ce05c0a923766": {
+      "amounts": [
+        [
+          "IDR",
+          "48260000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "daa409b3e631f5a5d1f8b1b04c39e8f52dff4c54e4f0c1e1d6383427359dae97": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "daf4531f29b5f78fc444891776bc1037081f707c57f990f7475c1cd94c3c28ad": {
+      "amounts": [
+        [
+          "USD",
+          "1296"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.056175+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "dbb8d9c3b9fba9b34367aa6c8dafdb3c688b65c066f96ecf4c747a91a367bcb1": {
+      "amounts": [
+        [
+          "INR",
+          "69000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.044942+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-06-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "dea3d46880f7bf3c3486a17a310bf8820d656364c5c1809b1094bb6672c38126": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.067447+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "decd2e04ddd1933b51808682c7937d8f318aa07065e631f513ddb26913046a60": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.077662+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "windfall_pending",
+      "percent": null
+    },
+    "def762d2015efeb48b65ccc1bfdc75a27237ded6636753b89a5dfabb47e39534": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "df3069cbbda4c33bffb40ae71126f793835549e52c0a6330c6ac51e94afb4992": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "windfall_settled",
+      "percent": null
+    },
+    "e06a4701e465cfddcf2f58c11b8bdf2b1c3bcddf18ae7ce9c9728e8aef2d60bb": {
+      "amounts": [
+        [
+          "USD",
+          "702"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "e16bc281fc1698764d0cbd8a893b103be95cbee721a9ced8e63d61abffce638c": {
+      "amounts": [
+        [
+          "USD",
+          "912"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "e1bff7f5fbecb5ccd37dca8aba3aa9e1eabb1726d0eedb28a265ee9221f16637": {
+      "amounts": [
+        [
+          "EUR",
+          "2827"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "e20e26158aedc8b6bb5fa64ed26c36bf78bb64888e8c4883d0998a12472bedec": {
+      "amounts": [
+        [
+          "INR",
+          "214000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2024-06-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "e441a6d14707d11ab5dee534ad214dcdde8c2eb57d201b88b96f0efc068ff3b4": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "fx_pending",
+      "percent": null
+    },
+    "e53ad04898b4c3c296fff52b4b2f07f9a13e110545d7771b817ef066abc33de3": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "e6098c890a8ede159f1342c50cfe47463be03510fbaa7d1d0a7de6251677ceb1": {
+      "amounts": [
+        [
+          "IDR",
+          "30400000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-04-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "e6fdb607ba890bbba38e5473783e33673461d508307e1f259453390b12c4fbf2": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "e7e93990446ab73d008d81286d2cb4adee17f0fcc91b4233d4a6cdb61d4a81ed": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.041888+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "e9bec3ebfceed543365862be6a020f7176d99d388585b7202031f9a541386a3f": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "ea19eed6c56b74b8f8e776e52bf6647ee85f1b64a34c329b9de935a238b465e1": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.049606+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "recurring_cost_change",
+      "percent": "12"
+    },
+    "eb15a317755a4682c7898364a23e440fbc806ee37a6be1f2741fd9d8a3c05867": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_stopped",
+      "percent": null
+    },
+    "ec5b69a221ff5a5877ab5b0c0bc910a52f2a43d34a436f5d6adbc1eafa54eec6": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "investment_paper_move",
+      "percent": null
+    },
+    "f1facd98e31643e13ae618318059a349deedd7b7846ab6dbdbbdd4a54ddc889c": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.077662+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "f257574343dba425437a91eb88ddcbb820a6f1d5fbaffd2a16c2d864d605da3f": {
+      "amounts": [
+        [
+          "EUR",
+          "1188"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-07-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "f40c100becb11594488a73d14684ebde80966095d11db01b2d3c9cf18a4b078b": {
+      "amounts": [
+        [
+          "INR",
+          "258000"
+        ],
+        [
+          "INR",
+          "116100"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    },
+    "f50915f7b16e0557d9ceaf385c6625810e1fde5655a1d8b211971a6bf1f57f86": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "payout_not_yet_available",
+      "percent": null
+    },
+    "f7401adabbf70573bb0c86f78be5ccc2b0349f21f4a40be06fc966563341ef33": {
+      "amounts": [
+        [
+          "USD",
+          "1680"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-11-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "f903581d1715fb784259a1648963365dec828fffe7a1ea5a69191abfbfaa10ef": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.077662+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "refund_pending",
+      "percent": null
+    },
+    "fa7a29882ee79c2d07f7ccbd67a73c3639e6da082dc013f790834eab3d088cdd": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2025-05-23"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "fc059093da3851590c3730e5a66d9a029fc403f79f289a61d908cd8fc5915a19": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "fc415e23e306d5c7a91cf4fcad4c33a7af649912bf178dffada7eb5365693455": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.074871+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "fce4c89ff3c314c0e48ad745538d498478f446e900f51bdc2cff45df54c53663": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.057755+00:00",
+      "confidence": 0.5,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "fd09ac2d9f406f9a5ca9490af41175900f210a8282def530c6c1240e5b765749": {
+      "amounts": [
+        [
+          "IDR",
+          "23940000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "fde7e304f36ca08e754e993ef89d7d2673d0cb3ba0caa23651d9656e949db58a": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.062079+00:00",
+      "confidence": 0.75,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "upfront_fee_scam",
+      "percent": null
+    },
+    "fe8e79cef3538844b5560c5cfd42b51af25df61a147f59715cdf3565e68fa1fd": {
+      "amounts": [
+        [
+          "EUR",
+          "1661"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.043624+00:00",
+      "confidence": 0.65,
+      "dates": [
+        "2026-01-15"
+      ],
+      "extractor": "heuristic-v1",
+      "intent": "salary_change",
+      "percent": null
+    },
+    "ff0f847691c5d989efc10e7cea251b1fcdb8a0a80b5b620192b77720fe70972d": {
+      "amounts": [],
+      "cached_at": "2026-09-12T14:56:51.072629+00:00",
+      "confidence": 0.45,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "bank_admin",
+      "percent": null
+    },
+    "ffd7bf408b55e28a37f392a2d559ae5637f5fa093599991dc86aec5f2d5ffc34": {
+      "amounts": [
+        [
+          "INR",
+          "260000"
+        ],
+        [
+          "INR",
+          "117000"
+        ]
+      ],
+      "cached_at": "2026-09-12T14:56:51.070836+00:00",
+      "confidence": 0.65,
+      "dates": [],
+      "extractor": "heuristic-v1",
+      "intent": "salary_one_off",
+      "percent": null
+    }
+  }
+}
